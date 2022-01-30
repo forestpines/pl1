@@ -8,8 +8,9 @@ Be creative and use multiple parameters from the API documentation to earn a top
 
 ## Directions URL
 
-```
-https://YourDirectionsApiURLGoesHere
+``` https://maps.googleapis.com/maps/api/directions/json?origin=place_id:EiREdW5kdXJuIFN0YWlycywgSGFtaWx0b24sIE9OLCBDYW5hZGEiLiosChQKEgkLpHsKFZssiBEGvd494uH7LRIUChIJj3feJ2yYLIgRIQ7f2Fbuais&destination=place_id
+
+https://maps.googleapis.com/maps/api/directions/outputFormat?parameters
 ```
 
 ## Next paste the full JSON response to this query here:
