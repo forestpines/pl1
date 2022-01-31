@@ -15,7 +15,7 @@ First step is to deploy the template into your own account.
 3. Make the repository Public. 
 4. Click Create Repository from Template to start the migration. Once complete, it will open to the ReadMe.md in the root of the repository under your account. You now have a "copy" of all files and can modify, edit and use these files to learn. 
 
-### You must enable GitHub pages to view HTML documents at the url `[username].github.io/pl1/`. 
+### You must enable GitHub pages to view HTML documents at the url `forestpines.github.io/pl1/`. 
 
 6. Click the `Settings` icon, near the top-right side of the GitHub window
 7. Scroll to the bottom and look for `Pages` entry in the left selection, click it. 
@@ -30,7 +30,7 @@ In this repository you will need to create content in this repository from the f
 
 - [x] Maps - Simple HTML Map Example
 - [x] Routes - Directions API - URL request JSON response
-- [ ] Modify Dynamic Map Clustering example to show Ontario Parks
+- [x] Modify Dynamic Map Clustering example to show Ontario Parks
 - [ ] Create your Story using Google Dynamic Maps (JavaScript) in the provided folder
 
 > Optional Tip: You can check the above boxes by editing this MarkDown document and adding an `x` between the `[ ]`, like this: `[x]`
