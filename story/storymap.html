@@ -40,6 +40,15 @@
         #subtext{
           line-height: 18px;
         }
+
+        #legend{
+          position: absolute;
+          top: 100px;
+          left: 15%;
+          z-index: 5;
+          line-height: 15px;
+          
+        }
     </style>
     <script>
       let map;
@@ -57,10 +66,10 @@
       // Data for the markers consisting of a name, a LatLng and a zIndex for the
       // order in which these markers should display on top of each other
       const beaches = [
-        ["Happy Rolph's Animal Farm", 43.22505, -79.20286, 2],
+        ["Happy Rolph's Animal Farm, hey teens like goats ok?", 43.22505, -79.20286, 2],
         ["Teen Angst HQ", 43.24441, -79.20823, 1],
-        ["Municipal Beach in my teens renamed Sunset Beach now", 43.22670, -79.22067, 4],
-        ["Lakeside Park", 43.20399, -79.26560, 3],
+        ["Municipal Beach in my teens, renamed Sunset Beach now, score one for marketing", 43.22670, -79.22067, 4],
+        ["Lakeside Park, also a Rush song, I did not like Rush then or now", 43.20399, -79.26560, 3],
       ];
 
       function setMarkers(map) {
@@ -108,6 +117,10 @@
       <div id="subtext">
         <p>With a bus system that stopped at 5pm on Sundays, teen me walked and biked everywhere. On foot, I lived too far from a movie theatre and would often float in a raft at Municipal Beach on a "good smell day" instead. With Nine Inch Nails on my headphones (or heaven forbid, the Godzilla soundtrack, I would walk all the way to the entrance of the Welland Canal and pretend I was on PEI. As an adult living beside an expressway, I sometimes miss the rumble of ships quietly rattling the dishes at night.</p>
       </div>
+    </div>
+    <div id="legend">
+      <h2>Legend</h2>
+      <p><img src="https://img.icons8.com/doodle/40/000000/scream.png" alt="Scream Face">Rage Against the Machine Listening Site</p>
     </div>
     <div id="map"></div>
     
