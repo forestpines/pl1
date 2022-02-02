@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- source: https://developers.google.com/maps/documentation/javascript/examples/map-id-style#maps_map_id_style-javascript -->
+<!-- source: https://developers.google.com/maps/documentation/javascript/examples/icon-complex -->
 
 <html>
   <head>
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
     <style>
-      /* Always set the map height explicitly to define the size of the div
+      /* sets the map height explicitly to define the size of the div
        * element that contains the map. */
         #map {
           height: 100%;
@@ -22,6 +22,7 @@
           margin: 0;
           padding: 0;
         }
+        /* Embedded CSS styling for text legend and backgrounds */
         #title{
           position: absolute;
           top: 50px;
@@ -64,7 +65,7 @@
 
       function initMap() {
       const map = new google.maps.Map(document.getElementById("map"), {
-          mapTypeId: 'satellite',
+          mapTypeId: 'hybrid',
           center: { lat: 43.225, lng: -79.226 },
           zoom: 14,
         });
@@ -77,8 +78,10 @@
       const beaches = [
         ["Happy Rolph's Animal Farm, hey teens like goats ok?", 43.22505, -79.20286, 2],
         ["Teen Angst HQ", 43.24441, -79.20823, 1],
-        ["Municipal Beach in my teens, renamed Sunset Beach now, score one for marketing", 43.22670, -79.22067, 4],
-        ["Lakeside Park, also a Rush song, I didn't care for Rush then or now", 43.20399, -79.26560, 3],
+        ["Municipal Beach in my teens, renamed Sunset Beach now, score one for marketing", 43.22670, -79.22067, 3],
+        ["Malcolmson Eco Park, favorite tree canopy for daydreaming about other places to live", 43.21589, -79.21723, 4],
+        ["Found my brother and his friends lighting fireworks here in a way I wouldn't describe as responsible", 43.20526, -79.25996, 5],
+        ["Lakeside Park, also a Rush song, I didn't care for Rush then or now", 43.20399, -79.26560, 6],
       ];
 
       function setMarkers(map) {
@@ -87,6 +90,8 @@
         // (0,0) is located in the top left of the image.
         // Origins, anchor positions and coordinates of the marker increase in the X
         // direction to the right and in the Y direction down.
+
+         // so so happy with this size customizable icon find.
         const image = {
           url: "https://img.icons8.com/doodle/40/000000/scream.png",
           // This marker is 48 pixels wide by 48 pixels high.
@@ -124,7 +129,7 @@
     <div id="title">
       <h1>Smells Like A Teen Angst Trail</h1>
       <div id="subtext">
-        <p>With a bus system that stopped at 5pm on Sundays, teen me walked and biked everywhere. On foot, I lived too far from a movie theatre and would often float in a raft at Municipal Beach on a "good smell day" instead. With Nine Inch Nails on my headphones (or heaven forbid, the Godzilla soundtrack, I would walk all the way to the entrance of the Welland Canal and pretend I was on PEI. As an adult living beside an expressway, I sometimes miss the rumble of ships quietly rattling the dishes at night.</p>
+        <p>With a bus system that stopped at 5pm on Sundays, teen me walked and biked everywhere. On foot, I lived too far from a movie theatre and would often float in a raft at Municipal Beach on a "good smell day" instead. With Nine Inch Nails on my headphones (or heaven forbid, the Godzilla soundtrack), I would walk all the way to the entrance of the Welland Canal and pretend I was on PEI. As an adult living beside an expressway, I sometimes miss the rumble of ships quietly rattling the dishes at night.</p>
       </div>
     </div>
     <div id="legend">
@@ -133,7 +138,7 @@
     <div id="map"></div>
     
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <!-- *** STUDENTS: Replace YOUR_API_KEY text with provided key in class for property src in next line *** -->
+    <!-- ***Replaced YOUR_API_KEY text with provided key in class for property src in next line *** -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
     </script>
   </body>
